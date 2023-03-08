@@ -1,0 +1,13 @@
+{
+  "name": "bot_pirizhok",
+  "version": "1.0.0",
+  "description": "My Node.js application",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "telegram-bot-api": "^2.0.1"
+  }
+}
