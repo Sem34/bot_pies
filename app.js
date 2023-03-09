@@ -12,15 +12,6 @@ const schedule = [
     { hour: 17, minute: 30, text: 'Доброго дня. Будьласка зробіть замовлення на завтра:\nСосиска -\nГорох -\nКартопля -\nКапуста -\nБіляш -\nСулугуні -\nМисливська -' },
 ];
 
-bot.onText((msg) => {
-  console.log(msg.length)
-  if (msg.length > 60) {
-    const chatId = msg.chat.id;
-    const resp = 'Дякую за замовлення';
-    bot.sendMessage(chatId, resp);
-  }
-});
-
 schedule.forEach(({ hour, minute, text }) => {
   const job = setInterval(() => {
     const now = new Date();
